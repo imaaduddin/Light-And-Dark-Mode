@@ -18,6 +18,17 @@ function darkMode() {
   image3.src = "Images/undraw_conceptual_idea_dark.svg";  
 }
 
+// light mode styles 
+function lightMode() {
+  nav.style.backgroundColor = "rgb(255 255 255 / 50%)";
+  textBox.style.backgroundColor = "rgb(0 0 0 / 50%)";
+  toggleIcon.children[0].textContent = "Light Mode";
+  toggleIcon.children[1].classList.remove("fa-moon");
+  toggleIcon.children[1].classList.add("fa-sun");
+  image1.src = "Images/undraw_proud_coder_light.svg";
+  image2.src = "Images/undraw_feeling_proud_light.svg";
+  image3.src = "Images/undraw_conceptual_idea_light.svg";  
+}
 
 // switch theme dynamically 
 function switchTheme(event) {
