@@ -49,4 +49,6 @@ toggleSwitch.addEventListener("change", switchTheme);
 
 // check local storage for theme 
 const currentTheme = localStorage.getItem("theme");
-console.log(currentTheme);
+if (currentTheme) {
+  document.documentElement.setAttribute("data-theme", currentTheme);
+}
